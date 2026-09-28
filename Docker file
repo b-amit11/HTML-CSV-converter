@@ -1,0 +1,13 @@
+FROM python:3.9
+
+WORKDIR /app
+
+copy read_html_table.py .
+
+ENTRYPOINT["python", "read_html_table.py"]
+
+
+
+
+
+
