@@ -24,7 +24,7 @@ IMAGE_NAME="project2_html_parser"
 # Check if Docker image exists
 if ! docker images --format '{{.Repository}}' | grep -q "$IMAGE_NAME"; then
   echo "Docker image not found. Building..."
-  docker build -t $IMAGE_NAME ../project2
+  docker build -t "$IMAGE_NAME" .
 fi
 
 # Process each URL
